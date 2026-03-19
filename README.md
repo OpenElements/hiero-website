@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 This repo contains the source for [hiero.org](https://hiero.org).
+This repo contains the source for [hiero.org](https://hiero.org).
 
 ## Current Stack
 
@@ -141,19 +142,34 @@ Important notes:
 
 For the full field reference and workflow, see [docs/blogs.md](docs/blogs.md).
 
+Important notes:
+
+- Use `+++`, not YAML `---`.
+- The current site only scans `.md` files directly inside `content/posts`.
+- If `slug` is omitted, the filename becomes the URL slug.
+- If `draft = true`, the post is skipped locally and in production.
+- Raw HTML is not rendered in blog content. Use Markdown syntax instead.
+- Hugo shortcodes like `{{< ... >}}` and `{{% ... %}}` are stripped out by the current parser.
+
+For the full field reference and workflow, see [docs/blogs.md](docs/blogs.md).
+
 ## Contributing
 
 We welcome contributions such as:
+
 
 - Code additions or changes
 - Blog posts
 
 ### Code Changes and Additions
 
+
 We have several [Open Issues](https://github.com/hiero-ledger/hiero-website/issues?q=is%3Aissue%20state%3Aopen%20no%3Aassignee) at the Hiero website that need help.
 
+Read [Workflow Guide](docs/workflow.md) to get started.
 Read [Workflow Guide](docs/workflow.md) to get started.
 
 ### Blog Posts
 
+See the [Detailed Guide on Creating a Blog Post](docs/blogs.md).
 See the [Detailed Guide on Creating a Blog Post](docs/blogs.md).

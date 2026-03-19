@@ -1,4 +1,5 @@
 # Writing Blog Posts
+# Writing Blog Posts
 
 This guide reflects how the current site reads and renders blog content.
 
@@ -49,7 +50,12 @@ If you do not set a `slug`, the file name becomes the blog URL:
 Use this template:
 
 ```toml
+```toml
 +++
+title = "My First Post"
+date = 2026-03-15
+draft = false
+featured_image = "/images/my-first-post/hero.png"
 title = "My First Post"
 date = 2026-03-15
 draft = false
@@ -60,10 +66,19 @@ duration = "4 min read"
 abstract = "A short summary used in blog cards and metadata."
 slug = "my-first-post"
 
+tags = ["Example", "Community"]
+duration = "4 min read"
+abstract = "A short summary used in blog cards and metadata."
+slug = "my-first-post"
+
 [[authors]]
 name = "Your Name"
 title = "Maintainer"
+name = "Your Name"
+title = "Maintainer"
 organization = "Hiero"
+link = "https://github.com/your-handle"
+image = "/images/authors/your-name.png"
 link = "https://github.com/your-handle"
 image = "/images/authors/your-name.png"
 +++
